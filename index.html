@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="left-column">
+        <div>
+          <img src="Assets/odin-lined.png" alt="Odin logo" class="image" />
+          <p>ODIN</p>
+        </div>
+      </section>
+      <section class="right-column">
+        <div>
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            now to get started.
+          </p>
+          <p>You <i>know</i> you want to.</p>
+        </div>
+        <div class="middle">
+          <h1>Let's do this!</h1>
+          <form action="#">
+            <section>
+              <div>
+                <p>
+                  <label for="first_name">First Name</label>
+                </p>
+                <input type="text" name="first-name" id="first_name" />
+              </div>
+              <div>
+                <p>
+                  <label for="last_name">Last Name</label>
+                </p>
+                <input type="text" id="last_name" name="last_name" />
+              </div>
+            </section>
+            <section>
+              <div>
+                <p>
+                  <label for="email">Email</label>
+                </p>
+                <input type="email" name="email" id="email" />
+              </div>
+              <div>
+                <p>
+                  <label for="phone">Phone Number</label>
+                </p>
+                <input type="tel" id="phone" name="phone_number" />
+              </div>
+            </section>
+            <section>
+              <div>
+                <p>
+                  <label for="password">Password</label>
+                </p>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  title="Six or more characters"
+                  pattern="^(.|\n)*$"
+                  required
+                />
+                <br />
+                <span id="errorMessage">*Passwords do not match</span>
+              </div>
+              <div>
+                <p>
+                  <label for="c_password">Confirm Password</label>
+                </p>
+                <input
+                  type="password"
+                  id="c_password"
+                  name="password"
+                  required
+                />
+                <br />
+              </div>
+            </section>
+          </form>
+        </div>
+        <div>
+          <div>
+            <button type="submit">Create Account</button>
+          </div>
+          <div class="under-btn-text">
+            <p>Already have an account? <span>Log in</span></p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
